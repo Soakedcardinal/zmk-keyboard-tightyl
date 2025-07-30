@@ -1,0 +1,16 @@
+if SHIELD_TIGHTYL_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "Tightyl"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_TIGHTYL_LEFT || SHIELD_TIGHTYL_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
