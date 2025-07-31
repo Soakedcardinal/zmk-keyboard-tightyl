@@ -25,4 +25,8 @@
 					, <&pro_micro_d 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
         wakeup-source;
 	};
+
+	zephyr_udc0: &usbd {
+		status = "okay";
+	};
 };
