@@ -1,5 +1,8 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 
+#include <physical_layouts.dtsi>
+
+
 / {
 	chosen {
 		zmk,kscan = &kscan0;
@@ -11,6 +14,12 @@
         display-name = "Default Layout";
         kscan = <&kscan0>;
         transform = <&default_transform>;
+		// keys  //                     w   h    x    y     rot    rx    ry
+        //     = <&key_physical_attrs 100 100    0    0       0     0     0>
+        //     , <&key_physical_attrs 100 100  100    0       0     0     0>
+        //     , <&key_physical_attrs 100 100    0  100       0     0     0>
+        //     , <&key_physical_attrs 100 100  100  100       0     0     0>
+        //     ;
     };
 
 	default_transform: keymap_transform_0 {
