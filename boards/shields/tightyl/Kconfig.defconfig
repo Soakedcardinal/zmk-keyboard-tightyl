@@ -1,3 +1,6 @@
+
+
+
 if SHIELD_TIGHTYL_LEFT
 
 config ZMK_KEYBOARD_NAME
@@ -8,7 +11,18 @@ config ZMK_SPLIT_ROLE_CENTRAL
 
 endif
 
+
+
 if SHIELD_TIGHTYL_LEFT || SHIELD_TIGHTYL_RIGHT
+
+config ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_PROXY
+    default y
+
+config ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_FETCHING
+    default y
+
+config ZMK_SPLIT_BLE
+    default y
 
 config ZMK_SPLIT
     default y
